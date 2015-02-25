@@ -6,3 +6,7 @@
 /output_*/
 /source/components/
 s3.conf
+.idea
+.DS_Store
+.node_modules
+.sass-cache

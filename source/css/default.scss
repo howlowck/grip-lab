@@ -1,0 +1,55 @@
+@import 'base/base';
+@import 'module/module';
+@import 'layout/layout';
+
+.color-container {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    .color {
+        width: 100%;
+        height: 100%;
+        &.super {
+            height: 20%;
+        }
+
+        &.main {
+            height: 80%;
+        }
+        &.white {
+            outline: solid $gray20 2px;
+            background-color: $white;
+        }
+        &.gray20 {
+            background-color: $gray20;
+        }
+        &.gray40 {
+            background-color: $gray40;
+        }
+        &.gray60 {
+            background-color: $gray60;
+        }
+        &.gray80 {
+            background-color: $gray80;
+        }
+        &.red {
+            background-color: $red;
+        }
+        &.darkRed {
+            background-color: $darkRed;
+        }
+        &.teal {
+            background-color: $teal;
+        }
+        &.darkTeal {
+            background-color: $darkTeal;
+        }
+    }
+}
+
+.dark-container {
+    padding: 10px;
+    margin: 12px 12px 12px 0;
+    background-color: $gray60;
+}
