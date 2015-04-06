@@ -70,3 +70,25 @@
     }
   }
 }
+
+.second-nav {
+  background-color: $gray60;
+  ul {
+    display: flex;
+    li {
+      text-align: center;
+      flex: 1;
+      a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 1.7em;
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}

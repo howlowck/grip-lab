@@ -1,0 +1,9 @@
+$break-small: 640px;
+$break-medium: 900px;
+$break-large: 1200px;
+
+$small-view: "only screen and (max-width : #{$break-small})";
+$medium-view: "only screen and (min-width : #{$break-small + 1px}) and (max-width : #{$break-medium})";
+$medium-and-large-view: "screen and (min-width : #{$break-small + 1px})";
+$large-view: "screen and (min-width : #{$break-medium + 1px})";
+$x-large-view: "screen and (min-width : #{$break-large + 1px})"

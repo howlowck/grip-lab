@@ -4,16 +4,15 @@
         <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="//localhost:9000" target="_blank">
         <link rel="stylesheet" href="lib/iconmoon/style.css"/>
         <link href="built/default.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-
         <header class="outer-container">
             {% include "topnav" %}
         </header>
         <div class="content outer-container">
-
             {% block page_content %}{% endblock %}
         </div>
         <footer class="outer-container">

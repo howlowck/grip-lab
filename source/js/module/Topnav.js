@@ -7,10 +7,10 @@ function Topnav(selector) {
 Topnav.prototype = {
     construct: function (selector) {
         this.el = document.querySelector(selector);
-        this.attachEvents();
+        this.bindEvents();
     },
 
-    attachEvents: function () {
+    bindEvents: function () {
         document.addEventListener('scroll',
             _.throttle(this.onScroll, 150).bind(this)
         );
