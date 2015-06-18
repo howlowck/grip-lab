@@ -1,0 +1,94 @@
+@mixin footerLink {
+  margin: 5px 0;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  display: block;
+  transition: color 0.3s;
+  &:hover {
+    color: $darkRed;
+  }
+}
+
+footer {
+  display: flex;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: #6E6D68;
+//  border-top: $gray80 solid 2px;
+//  & > * {
+//    text-align: center;
+//  }
+
+  .tags {
+    flex: 1;
+    .tag {
+      @include line-highlight;
+      background-color: white;
+      text-decoration: none;
+      margin: 2px;
+      transition: background-color 0.3s, color 0.3s;
+      &:hover {
+        background-color: $gray60;
+        color: white;
+      }
+    }
+  }
+
+  .quicklinks {
+    flex: 1;
+    a {
+      @include footerLink();
+    }
+  }
+
+  .related {
+    flex: 1;
+    a {
+      @include footerLink();
+    }
+  }
+
+  .connect {
+    flex: 1;
+
+    .contact {
+      input[type=submit] {
+        margin-top: 10px;
+      }
+    }
+
+    .social {
+      margin-top: 30px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.6em;
+        margin-right: 10px;
+        &:hover {
+          color: $darkRed;
+        }
+      }
+      a[href*="facebook.com"] {
+        &:after {
+          @include icon;
+          content: "\e601";
+        }
+
+      }
+      a[href*="twitter.com"] {
+        &:after {
+          @include icon;
+          content: "\e600";
+        }
+      }
+      a[href*="vimeo.com"] {
+        &:after {
+          @include icon;
+          content: "\e607";
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+#beliefs {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  .main-statement {
+    flex: 1;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .sub-statement {
+    flex: 1;
+    display: inline-block;
+    vertical-align: top;
+    img {
+      width: 80%;
+      margin: 30px;
+    }
+  }
+}
+
+#staff {
+  $picSize: 120px;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  .board {
+    flex: 1;
+    margin-left: 20px;
+    border-right: solid 1px $gray40;
+    .description {
+      display: inline-block;
+      width: calc(100% - #{$picSize + 20px});
+      .detail {
+      }
+    }
+  }
+
+  .staffs {
+    flex: 2;
+    margin-left: 20px;
+    .individual {
+      width: calc(50% - 10px);
+    }
+    h3 {
+      display: block;
+    }
+  }
+
+  .individual {
+    display: inline-block;
+    .pic {
+      border-radius: 3000px;
+      width: $picSize;
+      position: relative;
+      height: $picSize;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      display:inline-block;
+    }
+    .description {
+      vertical-align: top;
+      display: inline-block;
+      width: calc(100% - #{$picSize + 20px});
+    }
+  }
+}
+
+
+
+#history {
+//  background-size: cover;
+//  background-position: 0 0;
+//  background-repeat: no-repeat;
+  padding: 30px 0;
+
+  h2 {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+  }
+  .intro {
+    margin: 0 auto;
+    font-size: 1.3em;
+    color: white;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .detailed-history {
+    $storyWidth: 35%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .story {
+      background-color: rgba(white, 0.8);
+      padding: 20px;
+      width: $storyWidth;
+      font-size: 1.2em;
+
+      transition: transform 0.3s ease-out;
+      transform-style: preserve-3d;
+      -webkit-transform: rotateX(90deg);
+      transform: rotateX(90deg);
+      &.show {
+        -webkit-perspective: 900px;
+        -moz-perspective: 900px;
+        perspective: 900px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        //end transition
+      }
+
+
+      &:nth-child(odd) {
+        margin-left: 55%;
+      }
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+#finance {
+  text-align: center;
+
+  .finance-stats {
+    display: flex;
+    .stat {
+      flex: 1;
+      text-align: center;
+
+    }
+  }
+}
+
+#contact {
+  display: flex;
+  .blurb {
+    flex: 1;
+    padding: 30px;
+  }
+
+  .contact-form {
+    margin: 40px;
+    padding: 30px;
+    background-color: $teal;
+    flex: 1;
+    form {
+      .name, .email {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+      .message {
+        width: 95%;
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}

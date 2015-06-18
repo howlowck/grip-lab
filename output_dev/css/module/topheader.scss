@@ -1,0 +1,54 @@
+.top-header {
+  position: relative;
+  //  line-height: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  .overlay {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .intro {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 50px;
+    line-height: normal;
+    .title {
+      @include solid-highlight;
+      font-size: 3em;
+    }
+    .description {
+      color: white;
+      font-size: 2em;
+      font-weight: lighter;
+    }
+  }
+}
+
+@media #{$small-view} {
+  .top-header {
+    height: 400px;
+    .overlay {
+
+    }
+    .intro {
+      text-align: center;
+      width: 100%;
+      .title {
+        position: relative;
+        font-size: 2.2em;
+      }
+    }
+  }
+}

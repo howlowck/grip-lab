@@ -1,0 +1,129 @@
+.actions {
+  background-color: $gray20;
+  padding: 10px 0;
+  border-bottom: $gray40 solid 2px;
+  .item {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(25% - 3px);
+    text-align: center;
+  }
+  .starter {
+    font-size: 1.3em;
+  }
+  .action {
+    font-size: 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: $darkRed;
+    .num {
+      &:after {
+        content: '/';
+      }
+    }
+  }
+}
+
+.highlights {
+  display: flex;
+  padding: 3%;
+  .highlight {
+    flex: 1;
+    display: flex;
+    padding: 30px;
+    height: 100%;
+    align-items: stretch;
+
+    .media {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      margin-right:10px;
+      img {
+        width: 100%;
+      }
+    }
+    .info {
+      position: relative;
+      width: calc(50% - 10px);
+      display: inline-block;
+      min-height: 100%;
+      padding-bottom: 55px;
+      .super {
+      }
+
+      .title {
+
+      }
+
+      .description {
+        font-size: 1.3em;
+      }
+
+      button {
+        margin-top: 20px;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.stats-symbol {
+  $size: 5;
+  z-index: 10;
+  position: relative;
+  background-color: white;
+  border: black solid #{$size}px;
+  margin: 0 auto -#{$size/3}em auto;
+  width: #{$size/3}em;
+  height: #{$size/3}em;
+  padding: #{2*$size}px;
+  border-radius: 100em;
+  &:after {
+    @include icon;
+    content: "\e60a";
+    font-size: #{$size/3}em;
+  }
+}
+.stats {
+  line-height: 0;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  .overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  .container {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    .stat {
+      color: white;
+      line-height: normal;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      padding: 20px;
+      width: calc(25% - 40px);
+      .number {
+        font-size: 3em;
+      }
+      .unit {
+        font-size: 2em;
+      }
+      .description {
+
+      }
+    }
+  }
+}
