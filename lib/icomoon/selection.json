@@ -23,6 +23,7 @@
 				"name": "play"
 			},
 			"setIdx": 1,
+			"setId": 13,
 			"iconIdx": 71
 		},
 		{
@@ -46,6 +47,7 @@
 				"name": "quote"
 			},
 			"setIdx": 2,
+			"setId": 12,
 			"iconIdx": 20
 		},
 		{
@@ -69,6 +71,7 @@
 				"name": "quote2"
 			},
 			"setIdx": 2,
+			"setId": 12,
 			"iconIdx": 21
 		},
 		{
@@ -93,6 +96,7 @@
 				"name": "calendar"
 			},
 			"setIdx": 2,
+			"setId": 12,
 			"iconIdx": 28
 		},
 		{
@@ -117,6 +121,7 @@
 				"name": "film"
 			},
 			"setIdx": 2,
+			"setId": 12,
 			"iconIdx": 45
 		},
 		{
@@ -141,6 +146,7 @@
 				"name": "chat"
 			},
 			"setIdx": 2,
+			"setId": 12,
 			"iconIdx": 223
 		},
 		{
@@ -164,6 +170,7 @@
 				"name": "play-alt"
 			},
 			"setIdx": 4,
+			"setId": 10,
 			"iconIdx": 96
 		},
 		{
@@ -187,7 +194,31 @@
 				"name": "quotes-left"
 			},
 			"setIdx": 11,
+			"setId": 3,
 			"iconIdx": 118
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 768h768v-85.333h-768v85.333zM128 554.667h768v-85.333h-768v85.333zM128 256v85.333h768v-85.333h-768z"
+				],
+				"attrs": [],
+				"tags": [
+					"menu"
+				],
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"id": 686,
+				"order": 20,
+				"prevSize": 24,
+				"code": 58891,
+				"name": "menu"
+			},
+			"setIdx": 8,
+			"setId": 6,
+			"iconIdx": 686
 		},
 		{
 			"icon": {
@@ -210,6 +241,7 @@
 				"name": "help"
 			},
 			"setIdx": 10,
+			"setId": 4,
 			"iconIdx": 134
 		},
 		{
@@ -233,6 +265,7 @@
 				"name": "vimeo"
 			},
 			"setIdx": 10,
+			"setId": 4,
 			"iconIdx": 243
 		},
 		{
@@ -256,6 +289,7 @@
 				"name": "twitter"
 			},
 			"setIdx": 10,
+			"setId": 4,
 			"iconIdx": 245
 		},
 		{
@@ -279,6 +313,7 @@
 				"name": "facebook"
 			},
 			"setIdx": 10,
+			"setId": 4,
 			"iconIdx": 247
 		},
 		{
@@ -302,6 +337,7 @@
 				"name": "cross"
 			},
 			"setIdx": 13,
+			"setId": 1,
 			"iconIdx": 117
 		}
 	],

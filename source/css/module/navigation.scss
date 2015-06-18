@@ -30,6 +30,10 @@
     }
   }
 
+  .mobile-icon {
+    display: none;
+  }
+
   .logo {
     transition: height $navTransitionSpeed;
     display: inline-block;
@@ -66,6 +70,30 @@
           background-color: $red;
           color: white;
         }
+      }
+    }
+  }
+}
+
+@media #{$small-view} {
+  .top-nav {
+    ul {
+      display: none;
+    }
+
+    ul.visible {
+      display: block;
+    }
+
+    .mobile-icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      i {
+        color: white;
+        font-size: 1.7em;
       }
     }
   }

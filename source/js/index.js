@@ -18,6 +18,6 @@ allDonuts = DonutChart.findAndCreateAll(null, {
     colors: ['#eb2127', '#58595b'],
     animate: true,
     animationDuration: 900,
-    startingValues:[ 1, 2 ]
+    startingValues:[ 10, 20 ]
 }, app);
 

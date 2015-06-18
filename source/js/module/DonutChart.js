@@ -13,8 +13,8 @@ var DonutChart = function (elOrSelector, options, app) {
 
 function deepClone(array) {
     var output = [];
-    array.forEach(function (obj) {
-        output.push(_.clone(obj));
+    _.each(array, function (obj) {
+       output.push(_.clone(obj));
     });
     return output;
 }
@@ -44,11 +44,6 @@ DonutChart.defaultOptions = {
     easeType: "bounce",
     animationStartPoint: null,
     animationStartPointOffset: 200,
-    data: [
-        {label: 'apples', value: 5},
-        {label: 'oranges', value: 10},
-        {label: 'grapes', value: 23}
-    ],
     scrollCallback: function (evt) {
         if (window.scrollY >= (this.animationStartPoint - this.browser.getViewportHeight() + this.options.animationStartPointOffset)) {
             this.animationFunc();
