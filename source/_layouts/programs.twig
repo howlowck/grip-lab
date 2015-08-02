@@ -1,0 +1,49 @@
+{% extends "default" %}
+
+{% block page_content %}
+  {% include "topheader" %}
+  <h2>Programs</h2>
+  <div class="programs">
+    <div class="program slam">
+      <div class="media"><img src="/media/play-img-02.jpg" alt=""/></div>
+      <div class="content">
+        <div class="name"><h3>SLAM</h3></div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales at lectus eu volutpat. Morbi accumsan, tortor a consectetur imperdiet, ante erat rutrum augue, vitae tristique purus orci ac eros. </div>
+        <div class="action"><a href="#" class="button">Join Us at SLAM</a></div>
+      </div>
+    </div>
+    <div class="program gts">
+      <div class="media"><img src="/media/play-img-07.jpg" alt=""/></div>
+      <div class="content">
+        <div class="name"><h3>GRIP The School</h3></div>
+        <div class="description">Integer tincidunt leo sed odio porta cursus. Etiam feugiat quam et maximus luctus. Sed quis elementum dolor. Nunc condimentum vehicula orci, vel venenatis leo elementum sit amet. </div>
+        <div class="action"><a href="" class="button">See how it affects the students</a></div>
+      </div>
+    </div>
+    <div class="program legacy">
+      <div class="media"><img src="/media/play-img-06.jpg" alt=""/></div>
+      <div class="content">
+        <div class="name"><h3>Legacy Conference</h3></div>
+        <div class="description">Aenean consectetur quis nibh nec euismod. Etiam condimentum neque nec sapien dictum, at molestie diam vulputate. Vestibulum in ultrices purus. Vestibulum placerat odio at vestibulum mollis. </div>
+        <div class="action"><a href="#" class="button">More about the conference</a></div>
+      </div>
+    </div>
+    <div class="program streetlights">
+      <div class="media"><img src="/media/play-img-02.jpg" alt=""/></div>
+      <div class="content">
+        <div class="name"><h3>StreetLights</h3></div>
+        <div class="description">Vestibulum elementum finibus turpis, ut pretium turpis. Sed varius mi sit amet vehicula posuere. Duis congue id velit ac imperdiet. Duis ut posuere orci. Suspendisse viverra fringilla tortor, at auctor velit pretium eget. Vivamus quam eros, posuere ut interdum ac, lacinia sed libero. Proin vel mi orci.</div>
+        <div class="action"><a href="#" class="button">Learn about the media program</a></div>
+      </div>
+    </div>
+    {#<div class="program uyn">#}
+      {#<div class="media"></div>#}
+      {#<div class="content">#}
+      {#<div class="name">Urban Youth Network</div>#}
+      {#<div class="description"></div>#}
+      {#<div class="action"><a href="#" class="button">Learn more about the network</a></div>#}
+      {#</div>#}
+    {#</div>#}
+  </div>
+  {% block content %}{% endblock %}
+{% endblock %}

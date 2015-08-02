@@ -13,13 +13,13 @@ gulp.task('watch', function() {
 
 gulp.task('sass', function () {
     return gulp.src('source/css/default.scss')
-        .pipe(sass({sourcemapPath: '../../source/css'}))
+        //.pipe(sass({sourcemapPath: '../../source/css'}))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false
         }))
         .on('error', function (err) { console.log(err.message); })
-        .pipe(gulp.dest('output_dev/built'));
+        .pipe(gulp.dest('./output_dev/built'));
 });
 
 gulp.task('browserify', function () {

@@ -7,5 +7,5 @@
 s3.conf
 .idea
 .DS_Store
-.node_modules
+node_modules
 .sass-cache

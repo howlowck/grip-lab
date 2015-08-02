@@ -1,0 +1,66 @@
+.programs {
+
+}
+
+.program {
+  &.slam {
+    .media:hover {
+      img::before {
+        background-color: red;
+        content: '+++++++++';
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &.gts {
+    .media:hover {
+
+    }
+  }
+
+  &.legacy {
+    .media:hover {
+
+    }
+  }
+
+  &.streetlights {
+    .media:hover {
+
+    }
+  }
+
+  &.uyn {
+    .media:hover {
+
+    }
+  }
+
+  .media {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .name {
+
+  }
+
+  .description {
+
+  }
+
+  .action {
+
+  }
+}

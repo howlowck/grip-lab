@@ -35,10 +35,10 @@
 @mixin solid-highlight {
     font-weight: lighter;
     font-size: 2em;
-    background-color: $red;
+    background-color: green;
     color: white;
     display: inline;
-    padding: 2px;
+//    padding: 2px;
     line-height: 1.5em;
     position: relative;
     left: 0.5em;
