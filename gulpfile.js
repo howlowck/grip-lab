@@ -13,7 +13,8 @@ gulp.task('watch', function() {
 
 gulp.task('sass', function () {
     return gulp.src('source/css/default.scss')
-        //.pipe(sass({sourcemapPath: '../../source/css'}))
+        .pipe(sass({sourcemapPath: '../../source/css'}))
+        //.pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false

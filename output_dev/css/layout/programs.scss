@@ -1,55 +1,46 @@
-.programs {
+.stamp.type-program ~ * h2 {
+  text-align: center;
+  font-size: 3em;
+}
 
+.programs {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .program {
-  &.slam {
-    .media:hover {
-      img::before {
-        background-color: red;
-        content: '+++++++++';
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-
-  &.gts {
-    .media:hover {
-
-    }
-  }
-
-  &.legacy {
-    .media:hover {
-
-    }
-  }
-
-  &.streetlights {
-    .media:hover {
-
-    }
-  }
-
-  &.uyn {
-    .media:hover {
-
-    }
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  .filter {
+    transition: opacity 0.5s, background-size 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color: rgba(#2e2e2e, 0.2);
+    background-size: 100% 100%;
   }
 
   .media {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+    position: relative;
     img {
       width: 100%;
     }
+    &:hover {
+      .filter {
+        opacity: 1;
+        background-size: 70% 70%;
+      }
+    }
+
   }
   .content {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+    width: 75%;
+    margin-left: 20px;
+    font-size: 1.4em;
   }
 
   .name {
@@ -61,6 +52,34 @@
   }
 
   .action {
-
+    margin-top: 1.2em;
   }
+  &.slam {
+    .filter {
+      background-image: url("../media/output-slam.png");
+    }
+  }
+
+  &.gts {
+    .filter {
+      background-image: url("../media/output-griptheschool.png");
+    }
+  }
+
+  &.legacy {
+    .filter {
+      background-image: url("../media/output-legacy.png");
+    }
+  }
+
+  &.streetlights {
+    .filter {
+      background-image: url("../media/output-streetlights.png");
+    }
+  }
+
+  &.uyn {
+  }
+
+
 }

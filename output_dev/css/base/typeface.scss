@@ -35,7 +35,7 @@
 @mixin solid-highlight {
     font-weight: lighter;
     font-size: 2em;
-    background-color: green;
+    background-color: $red;
     color: white;
     display: inline;
 //    padding: 2px;

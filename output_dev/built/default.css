@@ -661,21 +661,53 @@ footer {
       width: 95%;
       margin-bottom: 20px; }
 
-.program.slam .media:hover img::before {
-  background-color: red;
-  content: '+++++++++';
-  width: 100%;
-  height: 100%; }
-.program .media {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top; }
-  .program .media img {
-    width: 100%; }
-.program .content {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top; }
+.stamp.type-program ~ * h2 {
+  text-align: center;
+  font-size: 3em; }
+
+.programs {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.program {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 10px 0; }
+  .program .filter {
+    transition: opacity 0.5s, background-size 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 46, 46, 0.2);
+    background-size: 100% 100%; }
+  .program .media {
+    position: relative; }
+    .program .media img {
+      width: 100%; }
+    .program .media:hover .filter {
+      opacity: 1;
+      background-size: 70% 70%; }
+  .program .content {
+    width: 75%;
+    margin-left: 20px;
+    font-size: 1.4em; }
+  .program .action {
+    margin-top: 1.2em; }
+  .program.slam .filter {
+    background-image: url("../media/output-slam.png"); }
+  .program.gts .filter {
+    background-image: url("../media/output-griptheschool.png"); }
+  .program.legacy .filter {
+    background-image: url("../media/output-legacy.png"); }
+  .program.streetlights .filter {
+    background-image: url("../media/output-streetlights.png"); }
 
 .color-container {
   width: 100px;
